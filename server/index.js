@@ -11,7 +11,6 @@ app.get('/getUsers', (req, res) => {
     UserModel.find({}, (err, result) => {
         if (err) {
             res.json(err);
-            console.log("not working")
         } else {
             res.json(result);
         }
@@ -19,5 +18,5 @@ app.get('/getUsers', (req, res) => {
 });
 
 app.listen(3001, () => {
-    console.log('SERVER IS RUNNING')
+    console.log('SERVER IS RUNNING RIGHT NOW')
 });
